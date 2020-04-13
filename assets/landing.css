@@ -13,8 +13,8 @@ body nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 body a {
@@ -47,17 +47,17 @@ body #sister-projects-btn {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   height: 90%;
   width: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: fixed;
 }
 
@@ -67,8 +67,8 @@ body #sister-projects-btn {
   display: flex;
   text-align: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 95%;
 }
 
@@ -83,24 +83,26 @@ body #sister-projects-btn {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 #landing .circle {
   width: 0.6em;
   fill: black;
   padding: 0.1em 0em;
-  -webkit-filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(98%) contrast(92%);
-          filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(98%) contrast(92%);
+  -webkit-filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg)
+    brightness(98%) contrast(92%);
+  filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(98%)
+    contrast(92%);
 }
 
 #landing #circle-1 {
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #landing #landing-bio {
@@ -126,6 +128,6 @@ body #sister-projects-btn {
   height: 40px;
   margin-top: 0.75em;
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 /*# sourceMappingURL=landing.css.map */

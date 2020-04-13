@@ -13,7 +13,9 @@
   </head>
   <body>
     <nav>
-      <a href="" id="sister-projects-btn">Our Sister Projects</a>
+      <button class="sister-projects-btn" id="show-modal">
+        Our Sister Projects
+      </button>
     </nav>
     <main>
       <div id="landing">
@@ -94,7 +96,9 @@
           aut ipsum obcaecati cupiditate laboriosam eligendi. Lorem, ipsum dolor
           sit amet consectetur adipisicing elit. Nesciunt, doloremque.
         </p>
-        <a id="your-story-btn">Tell us your story</a>
+        <a href="http://shareddistance.com/" id="your-story-btn" target="_blank"
+          >Tell us your story</a
+        >
         <p id="learn-more">Learn more</p>
         <img src="Assets/down.svg" alt="Down button" id="down-btn" />
         <!-- <?xml version="1.0" encoding="utf-8"?> -->
@@ -118,5 +122,44 @@
         </svg> -->
       </div>
     </main>
+    <div class="modal modal--hidden">
+      <nav>
+        <button class="modal__close-bar" id="popup-close-btn">&times</button>
+      </nav>
+      <div id="popup-flex-container">
+        <div id="resource-19-container">
+          <h1>Our Sister Projects</h1>
+          <h1 id="resource-19-title">Resource19</h1>
+          <p id="popup-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            cum animi quod adipisci, aspernatur eos voluptatem consectetur ad
+            natus quibusdam similique neque dolorum obcaecati aut incidunt modi
+            consequuntur beatae hic id numquam. Dolor, deserunt commodi.
+          </p>
+          <a
+            href="https://www.covid-19list.com/?fbclid=IwAR08na-wxnFGko12GXUGv_rncbDWrNuZw_Nw8kPRoJnstl_TOiPCGhUbmmI"
+            id="resource-19-btn"
+            target="_blank"
+            >Visit Resource19</a
+          >
+        </div>
+        <div id="covid-19-list-container">
+          <h1 id="covid-19-title">COVID-19</h1>
+          <p id="popup-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            cum animi quod adipisci, aspernatur eos voluptatem consectetur ad
+            natus quibusdam similique neque dolorum obcaecati aut incidunt modi
+            consequuntur beatae hic id numquam. Dolor, deserunt commodi.
+          </p>
+          <a
+            href="http://resource19.org/"
+            id="covid-19-list-btn"
+            target="_blank"
+            >Visit Covid-19 List</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="landing.js"></script>
   </body>
 </html>
