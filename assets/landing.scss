@@ -1,4 +1,7 @@
+// Color Set
+
 $navy-blue: #263850;
+$dark-blue: #001228;
 $black: #001228;
 $light-white: #eeeeee;
 $gray: #787878;
@@ -8,6 +11,8 @@ $gray: #787878;
   padding: 0;
 }
 
+// Start of NavBar
+
 body {
   background-color: $navy-blue;
   font-family: "Rubik";
@@ -15,6 +20,19 @@ body {
   nav {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .sister-projects-btn {
+    text-transform: uppercase;
+    margin: 2em 0em;
+    margin-right: 2em;
+    padding: 1em 3em;
+    color: white;
+    font-size: 0.6rem;
+    letter-spacing: 0.06em;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
   }
 
   a {
@@ -29,17 +47,22 @@ body {
     color: white;
     font-size: 1rem;
   }
+}
 
-  #sister-projects-btn {
-    text-transform: uppercase;
-    font-size: 0.5rem;
-    font-weight: 500;
-    line-height: 12px;
-    padding: 1em 3em;
-    border: 3px solid #ffffff;
-    margin: 2em 0em;
-    margin-right: 2em;
-  }
+// End of NavBar
+
+// Start of Main Landing Content
+
+#green-white-blob {
+  position: fixed;
+  top: 0;
+  left: -2em;
+}
+
+#pink-white-blob {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 #landing {
@@ -54,7 +77,6 @@ body {
 
   #image-scroll {
     display: flex;
-    text-align: center;
     justify-content: flex-end;
     width: 95%;
   }
@@ -107,3 +129,95 @@ body {
     filter: grayscale(100%);
   }
 }
+
+// End of Main Landing Content
+
+// Start of Pop-up
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(38, 56, 80, 1);
+  color: white;
+  &--hidden {
+    display: none;
+  }
+
+  #yellow-blob {
+    position: fixed;
+    top: 0;
+    right: -0.7em;
+  }
+
+  #orange-blob {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+  }
+
+  // Start of Pop-up NavBar
+
+  #popup-close-btn {
+    margin-right: 0.7em;
+    font-size: 3rem;
+    color: black;
+    z-index: 1;
+  }
+
+  // End of Pop-up NavBar
+
+  #popup-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    height: 75%;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    line-height: 2em;
+    align-self: flex-start;
+  }
+
+  #resource-19-container,
+  #covid-19-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #resource-19-container {
+    margin-bottom: 1em;
+  }
+
+  #resource-19-title,
+  #covid-19-title {
+    text-transform: none;
+  }
+
+  #popup-description {
+    font-size: 0.95rem;
+    margin-bottom: 1em;
+  }
+
+  #resource-19-btn,
+  #covid-19-list-btn {
+    font-size: 0.75rem;
+    padding: 0.5em 1.5em;
+    background-color: $dark-blue;
+    border: 3px solid $dark-blue;
+    color: white;
+    width: 40%;
+    align-self: center;
+  }
+}
+
+// End of Pop-up
