@@ -1,0 +1,56 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #263850; */
+    font-family: 'Rubik', sans-serif;
+}
+
+#home {
+    
+}
+
+#about {
+    
+}
+
+#stories {
+    
+}
+
+#blob1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+}
+
+#line1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+}
+
+#blob2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 85vh;
+}
+
+#line2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 75vh;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: white;
+}
