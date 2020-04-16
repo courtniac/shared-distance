@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #263850;
+  font-family: "Rubik";
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .sister-projects-btn {
+  text-transform: uppercase;
+  margin: 2em 0em;
+  margin-right: 2em;
+  padding: 1em 3em;
+  color: white;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+}
+
+body a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 199px;
+  letter-spacing: 0.06em;
+}
+
+body p {
+  color: white;
+  font-size: 1rem;
+}
+
+#green-white-blob {
+  position: fixed;
+  top: 0;
+  left: -2em;
+}
+
+#pink-white-blob {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 90%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+}
+
+#landing #image-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 95%;
+}
+
+#landing #logo {
+  display: inline-block;
+  width: 100%;
+}
+
+#landing #circle-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#landing .circle {
+  width: 0.6em;
+  fill: black;
+  padding: 0.1em 0em;
+  -webkit-filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(98%) contrast(92%);
+          filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(98%) contrast(92%);
+}
+
+#landing #circle-1 {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+#landing #landing-bio {
+  width: 80%;
+  margin: 1.5em 0em;
+}
+
+#landing #your-story-btn {
+  border: 3px solid #001228;
+  background: #001228;
+  padding: 0.75em 2em;
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+}
+
+#landing #learn-more {
+  font-size: 0.5rem;
+  font-weight: normal;
+  color: #eeeeee;
+}
+
+#landing #down-btn {
+  height: 40px;
+  margin-top: 0.75em;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #263850;
+  color: white;
+}
+
+.modal--hidden {
+  display: none;
+}
+
+.modal #yellow-blob {
+  position: fixed;
+  top: 0;
+  right: -0.7em;
+}
+
+.modal #orange-blob {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+}
+
+.modal #popup-close-btn {
+  margin-right: 0.7em;
+  font-size: 3rem;
+  color: black;
+  z-index: 1;
+}
+
+.modal #popup-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 75%;
+}
+
+.modal h1 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  line-height: 2em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.modal #resource-19-container,
+.modal #covid-19-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.modal #resource-19-container {
+  margin-bottom: 1em;
+}
+
+.modal #resource-19-title,
+.modal #covid-19-title {
+  text-transform: none;
+}
+
+.modal #popup-description {
+  font-size: 0.95rem;
+  margin-bottom: 1em;
+}
+
+.modal #resource-19-btn,
+.modal #covid-19-list-btn {
+  font-size: 0.75rem;
+  padding: 0.5em 1.5em;
+  background-color: #001228;
+  border: 3px solid #001228;
+  color: white;
+  width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=landing.css.map */
