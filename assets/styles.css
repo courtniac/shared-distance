@@ -9,3 +9,48 @@ body {
     background-color: 263850;
     font-family: 'Rubik', sans-serif;
 }
+
+#home {
+    background-color: #454545;
+    width: auto;
+    height: 100vh;
+}
+
+#about {
+    background-color: #17273c;
+    width: auto;
+    height: 100vh;
+}
+
+#stories {
+    width: auto;
+    height: 100vh;
+}
+
+#blob1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+}
+
+#line1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+}
+
+#blob2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 85vh;
+}
+
+#line2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 75vh;
+}
