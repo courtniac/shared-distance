@@ -9,12 +9,9 @@ body {
 }
 
 body nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 body .sister-projects-btn {
@@ -23,7 +20,7 @@ body .sister-projects-btn {
   margin-right: 2em;
   padding: 1em 3em;
   color: white;
-  font-size: 0.6rem;
+  font-size: 1.5rem;
   letter-spacing: 0.06em;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0);
@@ -44,15 +41,17 @@ body p {
 }
 
 #green-white-blob {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -2em;
+  width: 55%;
 }
 
 #pink-white-blob {
   position: fixed;
   bottom: 0;
   right: 0;
+  width: 65%;
 }
 
 #landing {
@@ -64,103 +63,98 @@ body p {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  height: 90%;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: fixed;
 }
 
 #landing #image-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 95%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#landing #logo {
-  display: inline-block;
+#landing #image-scroll #logo {
   width: 100%;
 }
 
 #landing #circle-scroll {
+  width: 3%;
+}
+
+#landing #circle-scroll .circle {
+  width: 100%;
+  -webkit-filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(98%);
+          filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(98%);
+}
+
+#landing #circle-scroll #circle-1 {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+#landing #landing-bio-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
-#landing .circle {
-  width: 0.6em;
-  fill: black;
-  padding: 0.1em 0em;
-  -webkit-filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(98%) contrast(92%);
-          filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg) brightness(98%) contrast(92%);
+#landing #landing-bio-container #landing-bio {
+  font-size: 3rem;
+  width: 85%;
 }
 
-#landing #circle-1 {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-#landing #landing-bio {
-  width: 80%;
-  margin: 1.5em 0em;
-}
-
-#landing #your-story-btn {
+#landing #landing-bio-container #your-story-btn {
   border: 3px solid #001228;
   background: #001228;
   padding: 0.75em 2em;
-  font-size: 0.9rem;
-  margin-bottom: 1.5em;
+  font-size: 2rem;
+  margin: 1.5em 0;
 }
 
-#landing #learn-more {
-  font-size: 0.5rem;
-  font-weight: normal;
+#landing #landing-bio-container #learn-more {
+  font-size: 2rem;
   color: #eeeeee;
 }
 
-#landing #down-btn {
-  height: 40px;
-  margin-top: 0.75em;
+#landing #landing-bio-container #down-btn {
+  margin-top: 2em;
+  height: 5em;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
 
-.modal {
+#no-scroll {
+  overflow: hidden;
+}
+
+#modal {
   position: fixed;
   top: 0;
   bottom: 0;
   background-color: #263850;
   color: white;
-}
-
-.modal--hidden {
   display: none;
 }
 
-.modal #yellow-blob {
+#modal #yellow-blob {
   position: fixed;
   top: 0;
   right: -0.7em;
+  width: 80%;
 }
 
-.modal #orange-blob {
+#modal #orange-blob {
   position: fixed;
   display: block;
   bottom: 0;
@@ -168,14 +162,13 @@ body p {
   width: 75%;
 }
 
-.modal #popup-close-btn {
+#modal #popup-close-btn {
   margin-right: 0.7em;
-  font-size: 3rem;
+  font-size: 8rem;
   color: black;
-  z-index: 1;
 }
 
-.modal #popup-flex-container {
+#modal #popup-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,9 +185,9 @@ body p {
   height: 75%;
 }
 
-.modal h1 {
+#modal h1 {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 3rem;
   letter-spacing: 0.06em;
   font-weight: bold;
   line-height: 2em;
@@ -202,8 +195,8 @@ body p {
       align-self: flex-start;
 }
 
-.modal #resource-19-container,
-.modal #covid-19-list-container {
+#modal #resource-19-container,
+#modal #covid-19-list-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,23 +207,27 @@ body p {
   width: 80%;
 }
 
-.modal #resource-19-container {
-  margin-bottom: 1em;
+#modal #resource-19-container {
+  margin-top: 15em;
 }
 
-.modal #resource-19-title,
-.modal #covid-19-title {
+#modal #resource-19-title,
+#modal #covid-19-title {
   text-transform: none;
 }
 
-.modal #popup-description {
-  font-size: 0.95rem;
-  margin-bottom: 1em;
+#modal #popup-description {
+  font-size: 2.3rem;
+  margin-bottom: 1.5em;
 }
 
-.modal #resource-19-btn,
-.modal #covid-19-list-btn {
-  font-size: 0.75rem;
+#modal #resource-19-btn {
+  margin-bottom: 1.5em;
+}
+
+#modal #resource-19-btn,
+#modal #covid-19-list-btn {
+  font-size: 2rem;
   padding: 0.5em 1.5em;
   background-color: #001228;
   border: 3px solid #001228;
