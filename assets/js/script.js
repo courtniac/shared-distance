@@ -3,7 +3,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
 	lockAnchors: false,
-	anchors:['home-nav', 'about-nav', 'stories-nav'],
+	anchors:['home', 'about', 'stories'],
 	navigation: true,
 	navigationPosition: 'right',
 	navigationTooltips: ['Home', 'About', 'Stories'],
