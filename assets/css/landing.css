@@ -3,8 +3,42 @@
   padding: 0;
 }
 
-body {
+body,
+a {
   background-color: #263850;
   font-family: "Rubik";
+  color: white;
+}
+
+.sister-projects-btn {
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: white;
+  padding: 1em 2em;
+  font-size: 0.75rem;
+  border: 2px solid white;
+  border-radius: 2em;
+  background-color: rgba(0, 0, 0, 0);
+  letter-spacing: 0.06em;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+#landing__bio {
+  margin-bottom: 1.5em;
+}
+
+.your-story-btn {
+  border: 3px solid #001228;
+  border-radius: 2em;
+  background: #001228;
+  padding: 0.75em 2em;
+  font-size: 1rem;
+}
+
+#landing__learn-more {
+  margin-top: 2em;
 }
 /*# sourceMappingURL=landing.css.map */

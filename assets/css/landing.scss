@@ -11,44 +11,87 @@ $gray: #787878;
   padding: 0;
 }
 
-// Start of NavBar
+// ***** START OF HOME PAGE *****
 
-body {
+body,
+a {
   background-color: $navy-blue;
   font-family: "Rubik";
-
-  // nav {
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  // }
-
-  // .sister-projects-btn {
-  //   text-transform: uppercase;
-  //   margin: 2em 0em;
-  //   margin-right: 2em;
-  //   padding: 1em 3em;
-  //   color: white;
-  //   font-size: 1.5rem;
-  //   letter-spacing: 0.06em;
-  //   border-radius: 20px;
-  //   background-color: rgba(0, 0, 0, 0);
-  //   border: 2px solid white;
-  // }
-
-  // a {
-  //   color: white;
-  //   text-decoration: none;
-  //   text-align: center;
-  //   border-radius: 199px;
-  //   letter-spacing: 0.06em;
-  // }
-
-  // p {
-  //   color: white;
-  //   font-size: 1rem;
-  // }
+  color: white;
 }
+
+.sister-projects-btn {
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: white;
+  padding: 1em 2em;
+  font-size: 0.75rem;
+  border: 2px solid white;
+  border-radius: 2em;
+  background-color: rgba(0, 0, 0, 0);
+  letter-spacing: 0.06em;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+#landing__bio {
+  margin-bottom: 1.5em;
+}
+
+.your-story-btn {
+  border: 3px solid $black;
+  border-radius: 2em;
+  background: $black;
+  padding: 0.75em 2em;
+  font-size: 1rem;
+}
+
+#landing__learn-more {
+  margin-top: 2em;
+}
+
+// ***** END OF HOME PAGE *****
+
+// Start of NavBar
+
+// body {
+//   background-color: $navy-blue;
+//   font-family: "Rubik";
+
+//   nav {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//   }
+
+//   .sister-projects-btn {
+//     text-transform: uppercase;
+//     margin: 2em 0em;
+//     margin-right: 2em;
+//     padding: 1em 3em;
+//     color: white;
+//     font-size: 1.5rem;
+//     letter-spacing: 0.06em;
+//     border-radius: 20px;
+//     background-color: rgba(0, 0, 0, 0);
+//     border: 2px solid white;
+//   }
+
+//   a {
+//     color: white;
+//     text-decoration: none;
+//     text-align: center;
+//     border-radius: 199px;
+//     letter-spacing: 0.06em;
+//   }
+
+//   p {
+//     color: white;
+//     font-size: 1rem;
+//   }
+// }
 
 // End of NavBar
 
@@ -80,20 +123,6 @@ body {
 
 //     #logo {
 //       width: 100%;
-//     }
-//   }
-
-//   #circle-scroll {
-//     width: 3%;
-
-//     .circle {
-//       width: 100%;
-//       filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(19deg)
-//         brightness(98%);
-//     }
-
-//     #circle-1 {
-//       filter: grayscale(100%);
 //     }
 //   }
 
