@@ -10,6 +10,19 @@ a {
   color: white;
 }
 
+#landing__green-white-blob {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#landing__pink-white-blob {
+  position: fixed;
+  width: 65%;
+  bottom: 0;
+  right: 0;
+}
+
 .sister-projects-btn {
   text-transform: uppercase;
   position: fixed;
@@ -17,7 +30,7 @@ a {
   right: 0;
   color: white;
   padding: 1em 2em;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   border: 2px solid white;
   border-radius: 2em;
   background-color: rgba(0, 0, 0, 0);
@@ -40,5 +53,109 @@ a {
 
 #landing__learn-more {
   margin-top: 2em;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #263850;
+  color: white;
+  display: none;
+  z-index: 124;
+}
+
+#modal #modal__yellow-blob {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#modal #modal__orange-blob {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+}
+
+#modal #modal__close-btn {
+  font-size: 3rem;
+  float: right;
+}
+
+#modal h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  line-height: 2em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#modal #modal__description {
+  font-size: 0.92rem;
+}
+
+#modal #modal__resource-19-btn,
+#modal #modal__covid-19-list-btn {
+  font-size: 1rem;
+  padding: 0.5em 1.5em;
+  background-color: #001228;
+  border: 3px solid #001228;
+  border-radius: 2em;
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#modal #modal__covid-19-title {
+  margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+  #landing__green-white-blob {
+    width: 40%;
+  }
+  #landing__pink-white-blob {
+    width: 40%;
+  }
+  .sister-projects-btn {
+    font-size: 1rem;
+  }
+  #landing__bio {
+    font-size: 2rem;
+  }
+  .your-story-btn {
+    font-size: 1.5rem;
+  }
+  #landing__learn-more {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #landing__green-white-blob {
+    width: 30%;
+  }
+  #landing__pink-white-blob {
+    width: 30%;
+  }
+  .sister-projects-btn {
+    font-size: 1.5rem;
+  }
+  #landing__logo {
+    width: 100%;
+  }
+  #landing__bio {
+    font-size: 2.5rem;
+  }
+  .your-story-btn {
+    font-size: 1.75rem;
+  }
+  #landing__learn-more {
+    font-size: 1.25rem;
+  }
 }
 /*# sourceMappingURL=landing.css.map */
