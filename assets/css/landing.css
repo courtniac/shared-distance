@@ -3,8 +3,7 @@
   padding: 0;
 }
 
-body,
-a {
+body {
   font-family: "Rubik";
   color: white;
 }
@@ -13,6 +12,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  width: 55%;
 }
 
 #landing__pink-white-blob {
@@ -38,6 +38,11 @@ a {
   margin-right: 1em;
 }
 
+#landing__logo {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
 #landing__bio {
   margin-bottom: 1.5em;
 }
@@ -48,6 +53,7 @@ a {
   background: #001228;
   padding: 0.75em 2em;
   font-size: 1rem;
+  color: white;
 }
 
 #landing__learn-more {
@@ -113,6 +119,31 @@ a {
   margin-top: 2em;
 }
 
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-height: 650px) {
+  #landing__green-white-blob {
+    width: 45%;
+  }
+  #landing__pink-white-blob {
+    width: 60%;
+  }
+  #landing__bio {
+    font-size: 0.8rem;
+  }
+  .your-story-btn {
+    font-size: 0.7rem;
+  }
+  #landing__learn-more {
+    font-size: 0.6rem;
+  }
+  #landing__down-btn {
+    width: 5%;
+  }
+}
+
 @media (min-width: 768px) {
   #landing__green-white-blob {
     width: 40%;
@@ -120,17 +151,17 @@ a {
   #landing__pink-white-blob {
     width: 40%;
   }
-}
-
-@media (min-width: 992px) {
-  #landing__green-white-blob {
-    width: 30%;
+  .sister-projects-btn {
+    font-size: 1rem;
   }
-  #landing__pink-white-blob {
-    width: 30%;
+  #landing__bio {
+    font-size: 2rem;
   }
-  #landing__logo {
-    width: 100%;
+  .your-story-btn {
+    font-size: 1.5rem;
+  }
+  #landing__learn-more {
+    font-size: 1rem;
   }
 }
 
