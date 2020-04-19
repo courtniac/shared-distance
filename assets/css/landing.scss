@@ -15,7 +15,7 @@ $gray: #787878;
 
 body,
 a {
-  background-color: $navy-blue;
+  // background-color: $navy-blue;
   font-family: "Rubik";
   color: white;
 }
@@ -186,3 +186,52 @@ a {
 }
 
 // ***** END OF HOME PAGE *****
+
+/* ABOUT STYLING */
+h1 {
+  color: white;
+}
+
+#icons {
+  width: 75vw;
+}
+
+.your-story-btn {
+  border: 3px solid #001228;
+  background: #001228;
+  padding: 0.75em 2em;
+  margin: 1.5em 0;
+  transition: all 0.25s ease;
+}
+
+.your-story-btn:hover {
+  text-decoration: none;
+  color: white;
+  background: none;
+  transition-timing-function: ease-in;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: white;
+}
+
+.posts {
+  height: 50vh;
+}
+
+#stories-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  order: -1;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 16px;
+}
