@@ -176,6 +176,11 @@ p {
   font-size: 1rem;
 }
 
+div.fp-tableCell {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 #icons {
   width: 70vw;
   display: block;
@@ -222,6 +227,21 @@ p {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+}
+
+.scrolling-wrapper-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.scrolling-wrapper-flexbox .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 @media (min-width: 768px) {

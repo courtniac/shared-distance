@@ -81,3 +81,16 @@ var myFullpage = new fullpage('#fullpage', {
 	afterSlideLoad: function (section, origin, destination, direction) {},
 	onSlideLeave: function (section, origin, destination, direction) {}
 });
+
+new InstagramFeed({
+	'username': 'shareddistance',
+	'container': document.getElementById("instagram-feed"),
+	'display_profile': false,
+	'display_biography': false,
+	'display_gallery': true,
+	'callback': null,
+	'styling': true,
+	'items': 8,
+	'items_per_row': 4,
+	'margin': 0.5
+});
