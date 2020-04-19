@@ -28,25 +28,25 @@ body {
 #landing__pink-white-blob {
   position: fixed;
   width: 65%;
-  bottom: 0;
+  top: 0;
   right: 0;
 }
 
-.sister-projects-btn {
-  text-transform: uppercase;
-  position: fixed;
-  top: 0;
-  right: 0;
-  color: white;
-  padding: 1em 2em;
-  font-size: 0.6rem;
-  border: 2px solid white;
-  border-radius: 2em;
-  background-color: rgba(0, 0, 0, 0);
-  letter-spacing: 0.06em;
-  margin-top: 1em;
-  margin-right: 1em;
-}
+// .sister-projects-btn {
+//   text-transform: uppercase;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   color: white;
+//   padding: 1em 2em;
+//   font-size: 0.6rem;
+//   border: 2px solid white;
+//   border-radius: 2em;
+//   background-color: rgba(0, 0, 0, 0);
+//   letter-spacing: 0.06em;
+//   margin-top: 1em;
+//   margin-right: 1em;
+// }
 
 #landing__logo {
   width: 100%;
@@ -57,14 +57,14 @@ body {
   margin-bottom: 1.5em;
 }
 
-.your-story-btn {
-  border: 3px solid $black;
-  border-radius: 2em;
-  background: $black;
-  padding: 0.75em 2em;
-  font-size: 1rem;
-  color: white;
-}
+// .your-story-btn {
+//   border: 3px solid $black;
+//   border-radius: 2em;
+//   background: $black;
+//   padding: 0.75em 2em;
+//   font-size: 1rem;
+//   color: white;
+// }
 
 #landing__learn-more {
   margin-top: 2em;
@@ -137,35 +137,32 @@ body {
 
 // Smaller screens 
 
-@media (min-width: 320px) and (max-height: 650px) {
+// @media (min-width: 320px) and (max-height: 650px) {
 
-  #landing__green-white-blob {
-    width: 45%;
-  }
+//   #landing__green-white-blob {
+//     width: 45%;
+//   }
 
-  #landing__pink-white-blob {
-    width: 60%;
-  }
+//   #landing__pink-white-blob {
+//     width: 60%;
+//   }
 
-  #landing__bio {
-    font-size: 0.8rem;
-  }
+//   #landing__bio {
+//     font-size: 0.8rem;
+//   }
 
-  // .your-story-btn {
-  //   font-size: 0.7rem;
-  // }
+//   .your-story-btn {
+//     font-size: 0.7rem;
+//   }
 
-  #landing__learn-more {
-    font-size: 0.6rem;
-  }
+//   #landing__learn-more {
+//     font-size: 0.6rem;
+//   }
 
-  #landing__down-btn {
-    width: 5%;
-  }
-}
-
-
-// Pixel 2
+//   #landing__down-btn {
+//     width: 5%;
+//   }
+// }
 
 
 // Medium devices (tablets, 768px and up)
@@ -178,102 +175,143 @@ body {
     width: 40%;
   }
 
-  // .sister-projects-btn {
-  //   font-size: 1rem;
-  // }
+  .sister-projects-btn {
+    // font-size: 1.5rem;
+  }
+
+  #landing__logo {
+    width: 100%;
+  }
 
   #landing__bio {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
-  // .your-story-btn {
-  //   font-size: 1.5rem;
-  // }
+  .your-story-btn {
+    font-size: 1.75rem;
+  }
 
   #landing__learn-more {
+    font-size: 1.25rem;
+
+    #landing__bio {
+      font-size: 2rem;
+    }
+
+    // .your-story-btn {
+    //   font-size: 1.5rem;
+    // }
+
+    #landing__learn-more {
+      font-size: 1rem;
+    }
+  }
+
+  // Large devices (desktops, 992px and up)
+
+  // @media (min-width: 992px) {
+  //   #landing__green-white-blob {
+  //     width: 30%;
+  //   }
+
+  //   #landing__pink-white-blob {
+  //     width: 30%;
+  //   }
+
+  //   .sister-projects-btn {
+  //     font-size: 1.5rem;
+  //   }
+
+  //   #landing__logo {
+  //     width: 100%;
+  //   }
+
+  //   #landing__bio {
+  //     font-size: 2.5rem;
+  //   }
+
+  //   .your-story-btn {
+  //     font-size: 1.75rem;
+  //   }
+
+  //   #landing__learn-more {
+  //     font-size: 1.25rem;
+  //   }
+  // }
+
+  // ***** END OF HOME PAGE *****
+
+  /* ABOUT STYLING */
+  h1 {
+    color: white;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+
+  p {
     font-size: 1rem;
   }
-}
 
-// Large devices (desktops, 992px and up)
+  // #about {
+  //   padding-top: 0;
+  //   padding-bottom: 0;
+  // }
 
-// @media (min-width: 992px) {
-//   #landing__green-white-blob {
-//     width: 30%;
-//   }
+  #icons {
+    width: 70vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
 
-//   #landing__pink-white-blob {
-//     width: 30%;
-//   }
+  #about-text>p:last-of-type {
+    margin-bottom: 2em;
+  }
 
-//   .sister-projects-btn {
-//     font-size: 1.5rem;
-//   }
+  .your-story-btn {
+    border: 3px solid #001228;
+    background: #001228;
+    padding: 0.75em 2em;
+    margin: 1.5em 0;
+    transition: all 0.25s ease;
+  }
 
-//   #landing__logo {
-//     width: 100%;
-//   }
+  .your-story-btn:hover {
+    text-decoration: none;
+    color: white;
+    background: none;
+    transition-timing-function: ease-in;
+  }
 
-//   #landing__bio {
-//     font-size: 2.5rem;
-//   }
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    background: white;
+  }
 
-//   .your-story-btn {
-//     font-size: 1.75rem;
-//   }
+  .posts {
+    height: 50vh;
+  }
 
-//   #landing__learn-more {
-//     font-size: 1.25rem;
-//   }
-// }
+  #stories-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    order: -1;
+  }
 
-// ***** END OF HOME PAGE *****
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    #icons {
+      width: 40vw;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2em;
+    }
+  }
 
-/* ABOUT STYLING */
-h1 {
-  color: white;
-}
+  // Large devices (desktops, 992px and up)
 
-#icons {
-  width: 75vw;
-}
-
-.your-story-btn {
-  border: 3px solid #001228;
-  background: #001228;
-  padding: 0.75em 2em;
-  margin: 1.5em 0;
-  transition: all 0.25s ease;
-}
-
-.your-story-btn:hover {
-  text-decoration: none;
-  color: white;
-  background: none;
-  transition-timing-function: ease-in;
-}
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  background: white;
-}
-
-.posts {
-  height: 50vh;
-}
-
-#stories-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  order: -1;
-}
-
-h1 {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 16px;
-}
+  // @media (min-width: 992px) {}

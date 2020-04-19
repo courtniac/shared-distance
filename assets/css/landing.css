@@ -95,7 +95,7 @@ body {
   font-weight: bold;
   line-height: 2em;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 #modal #modal__description {
@@ -111,8 +111,8 @@ body {
   border-radius: 2em;
   color: white;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 #modal #modal__covid-19-title {
@@ -127,15 +127,19 @@ body {
   #landing__green-white-blob {
     width: 45%;
   }
+
   #landing__pink-white-blob {
     width: 60%;
   }
+
   #landing__bio {
     font-size: 0.8rem;
   }
+
   #landing__learn-more {
     font-size: 0.6rem;
   }
+
   #landing__down-btn {
     width: 5%;
   }
@@ -145,12 +149,15 @@ body {
   #landing__green-white-blob {
     width: 40%;
   }
+
   #landing__pink-white-blob {
     width: 40%;
   }
+
   #landing__bio {
     font-size: 2rem;
   }
+
   #landing__learn-more {
     font-size: 1rem;
   }
@@ -159,10 +166,24 @@ body {
 /* ABOUT STYLING */
 h1 {
   color: white;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
 }
 
 #icons {
-  width: 75vw;
+  width: 70vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+#about-text>p:last-of-type {
+  margin-bottom: 2em;
 }
 
 .your-story-btn {
@@ -179,7 +200,7 @@ h1 {
   color: white;
   background: none;
   -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
 
 #fp-nav ul li a span,
@@ -197,15 +218,18 @@ h1 {
   left: 0;
   width: 100%;
   -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-h1 {
-  font-size: 1rem;
+@media (min-width: 768px) {
+  #icons {
+    width: 40vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
 }
 
-p {
-  font-size: 16px;
-}
 /*# sourceMappingURL=landing.css.map */
