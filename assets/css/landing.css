@@ -133,9 +133,6 @@ body {
   #landing__bio {
     font-size: 0.8rem;
   }
-  .your-story-btn {
-    font-size: 0.7rem;
-  }
   #landing__learn-more {
     font-size: 0.6rem;
   }
@@ -151,14 +148,8 @@ body {
   #landing__pink-white-blob {
     width: 40%;
   }
-  .sister-projects-btn {
-    font-size: 1rem;
-  }
   #landing__bio {
     font-size: 2rem;
-  }
-  .your-story-btn {
-    font-size: 1.5rem;
   }
   #landing__learn-more {
     font-size: 1rem;
