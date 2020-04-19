@@ -120,18 +120,6 @@ a {
   #landing__pink-white-blob {
     width: 40%;
   }
-  .sister-projects-btn {
-    font-size: 1rem;
-  }
-  #landing__bio {
-    font-size: 2rem;
-  }
-  .your-story-btn {
-    font-size: 1.5rem;
-  }
-  #landing__learn-more {
-    font-size: 1rem;
-  }
 }
 
 @media (min-width: 992px) {
@@ -141,30 +129,32 @@ a {
   #landing__pink-white-blob {
     width: 30%;
   }
-  .sister-projects-btn {
-    font-size: 1.5rem;
-  }
   #landing__logo {
     width: 100%;
-  }
-  #landing__bio {
-    font-size: 2.5rem;
-  }
-  .your-story-btn {
-    font-size: 1.75rem;
-  }
-  #landing__learn-more {
-    font-size: 1.25rem;
   }
 }
 
 /* ABOUT STYLING */
 h1 {
   color: white;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
 }
 
 #icons {
-  width: 75vw;
+  width: 70vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+#about-text > p:last-of-type {
+  margin-bottom: 2em;
 }
 
 .your-story-btn {
@@ -203,11 +193,13 @@ h1 {
           order: -1;
 }
 
-h1 {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 16px;
+@media (min-width: 768px) {
+  #icons {
+    width: 40vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
 }
 /*# sourceMappingURL=landing.css.map */
