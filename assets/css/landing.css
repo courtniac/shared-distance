@@ -45,6 +45,7 @@ body {
   border-color: #001228;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+  text-decoration: none;
 }
 
 #landing__logo {
@@ -297,11 +298,13 @@ div.fp-tableCell {
 
 @media (min-width: 768px) {
   #icons {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #icons {
     width: 40vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
   }
 }
 /*# sourceMappingURL=landing.css.map */

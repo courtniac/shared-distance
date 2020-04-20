@@ -73,27 +73,56 @@ var myFullpage = new fullpage('#fullpage', {
 
 	//events
 	onLeave: function (origin, destination, direction) {},
-	afterLoad: function (origin, destination, direction) {},
+	afterLoad: function(origin, destination, direction){
+		var loadedSection = this;
+
+		if (origin.anchor == 'home'){
+			let greenBlobAnimation = anime({
+				targets: '#landing__green-white-blob',
+				delay: 500,
+				translateX: [-500, 0],
+				opacity: ['0%', '100%'],
+				duration: 1000,
+				easing: 'linear',
+				direction: 'normal',
+				autoplay: true
+			  }); 
+
+			let pinkBlobAnimation = anime({
+				targets: '#landing__pink-white-blob',
+				translateX: [500, 0],
+				delay: 500,
+				opacity: ['0%', '100%'],
+				duration: 1000,
+				easing: 'linear',
+				direction: 'normal',
+				autoplay: true
+			  });  
+		}
+
+		// if ((origin == 1 || origin == 3) && destination == 2){
+		// 	let iconsAnimation = anime({
+		// 		targets: '#icons',
+		// 		translateX: [500, 0],
+		// 		opacity: ['0%', '100%'],
+		// 		duration: 1000,
+		// 		easing: 'linear',
+		// 		direction: 'normal',
+		// 		autoplay: true
+		// 	  });  
+		// }
+
+		// if (origin.anchor == 'stories'){
+		// 	console.log("Stories ended loading");
+		// }
+	},
 	afterRender: function () {},
 	afterResize: function (width, height) {},
 	afterReBuild: function () {},
 	afterResponsive: function (isResponsive) {},
-	afterSlideLoad: function (section, origin, destination, direction) {},
+	afterSlideLoad: function( section, origin, destination, direction){},
 	onSlideLeave: function (section, origin, destination, direction) {}
 });
-
-// new InstagramFeed({
-// 	'username': 'shareddistance',
-// 	'container': document.getElementById("instagram-feed"),
-// 	'display_profile': false,
-// 	'display_biography': false,
-// 	'display_gallery': true,
-// 	'callback': null,
-// 	'styling': true,
-// 	'items': 8,
-// 	'items_per_row': 4,
-// 	'margin': 0.5
-// });
 
 function myFunction(x) {
 	if (x.matches) { // If media query matches
@@ -128,13 +157,3 @@ function myFunction(x) {
   var x = window.matchMedia("(max-width: 700px)")
   myFunction(x) // Call listener function at run time
   x.addListener(myFunction) // Attach listener function on state changes
-
-// document.addEventListener('DOMContentLoaded', (event) => {
-// 	var instaFeed = document.getElementsByClassName("instagram_gallery")[0];
-// 	var instaPosts = instaFeed.children;
-// 	console.log(instaPosts);
-// 	for (var i=0; i < instaPosts.length; i++) {
-// 		console.log("worked");
-// 	}
-//   })
-
