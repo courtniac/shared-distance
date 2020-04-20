@@ -23,7 +23,7 @@ var myFullpage = new fullpage('#fullpage', {
 	loopBottom: false,
 	loopTop: false,
 	loopHorizontal: true,
-	continuousVertical: true,
+	continuousVertical: false,
 	continuousHorizontal: false,
 	scrollHorizontally: false,
 	interlockedSlides: false,
