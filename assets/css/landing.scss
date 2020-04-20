@@ -46,6 +46,14 @@ body {
   letter-spacing: 0.06em;
   margin-top: 1em;
   margin-right: 1em;
+  cursor: pointer;
+}
+
+.sister-projects-btn:hover {
+  color: white;
+  background: $dark-blue;
+  border-color: $dark-blue;
+  transition: 0.2s ease-in
 }
 
 #landing__logo {
@@ -143,12 +151,20 @@ body {
     width: 40vw;
   }
 
-  #landing__logo {
-    margin-top: -5em;
+  .sister-projects-btn {
+    font-size: 0.9rem;
   }
 
   #landing__bio {
     font-size: 1.5rem;
+  }
+
+  #landing__your-story-btn {
+    font-size: 1.2rem;
+  }
+
+  #landing__learn-more {
+    font-size: 0.8rem;
   }
 
   #landing__down-btn {
@@ -160,25 +176,65 @@ body {
 
 @media (min-width: 992px) {
   #landing__green-white-blob {
-    width: 30vw;
+    width: 40vw;
   }
 
   #landing__pink-white-blob {
-    width: 30%;
+    width: 50vw;
   }
 
   .sister-projects-btn {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   #landing__logo {
-    margin-top: -25em;
+    font-size: 30px;
+    margin-top: 5em;
   }
 
   #landing__bio {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0 5em;
-    margin-top: -2em;
+  }
+
+  #landing__your-story-btn {
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+  }
+
+  #landing__learn-more {
+    font-size: 1.2rem;
+  }
+
+  #landing__down-btn {
+    width: 2%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #landing__green-white-blob {
+    width: 22vw;
+  }
+
+  #landing__pink-white-blob {
+    width: 20vw;
+  }
+
+  #landing__logo {
+    width: 60%;
+    margin-top: 0em;
+    text-align: center;
+  }
+
+  #landing__bio {
+    font-size: 1.3rem;
+    padding: 0 12em;
+    margin-top: 1em;
+  }
+
+  .sister-projects-btn {
+    font-size: 0.7rem;
   }
 
   #landing__your-story-btn {
@@ -186,42 +242,15 @@ body {
     margin-bottom: 1.5em;
   }
 
-  #landing__down-btn {
-    width: 1%;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
-  #landing__logo {
-    margin-top: 0em;
-  }
-
-  #landing__bio {
-    font-size: 2.5rem;
-    padding: 0 0.5em;
-    margin-top: 1em;
-  }
-
-  .sister-projects-btn {
-    font-size: 1.3rem;
-  }
-
-  #landing__your-story-btn {
-    font-size: 2rem;
-    margin-bottom: 1.5em;
-  }
-
   #landing__learn-more {
-    margin-top: 8em;
+    margin-top: 5em;
     font-size: 0.6rem;
     margin-bottom: 3em;
   }
 
 
   #landing__down-btn {
-    width: 3%;
+    width: 1.5%;
   }
 
 }
@@ -245,8 +274,8 @@ p {
 // }
 
 div.fp-tableCell {
-  padding-top: 0!important;
-  padding-bottom: 0!important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 #icons {
@@ -301,11 +330,11 @@ div.fp-tableCell {
 //   row-gap: 15px;
 // }
 
-.instagram_gallery > a {
+.instagram_gallery>a {
   transition: all 0.25s ease;
 }
 
-.instagram_gallery > a:hover {
+.instagram_gallery>a:hover {
   opacity: 50%;
   transition-timing-function: ease-in;
 }
