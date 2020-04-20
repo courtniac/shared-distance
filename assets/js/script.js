@@ -76,7 +76,7 @@ var myFullpage = new fullpage('#fullpage', {
 	afterLoad: function(origin, destination, direction){
 		var loadedSection = this;
 
-		if (origin.anchor == 'home'){
+		if (origin.anchor == 'home' || destination.anchor == 'home') {
 			let greenBlobAnimation = anime({
 				targets: '#landing__green-white-blob',
 				delay: 500,
