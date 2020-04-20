@@ -293,6 +293,23 @@ div.fp-tableCell {
   order: -1;
 }
 
+// .instagram_gallery {
+//   display: grid;
+//   grid-template-columns: [start] 33% [col1] auto [col2] 33% [col3];
+//   grid-template-rows: [start] 50% [row1] auto [row2];
+//   column-gap: 10px;
+//   row-gap: 15px;
+// }
+
+.instagram_gallery > a {
+  transition: all 0.25s ease;
+}
+
+.instagram_gallery > a:hover {
+  opacity: 50%;
+  transition-timing-function: ease-in;
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   #icons {

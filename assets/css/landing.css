@@ -258,6 +258,17 @@ div.fp-tableCell {
           order: -1;
 }
 
+.instagram_gallery > a {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.instagram_gallery > a:hover {
+  opacity: 50%;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
 @media (min-width: 768px) {
   #icons {
     width: 40vw;

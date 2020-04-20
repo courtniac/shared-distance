@@ -31,7 +31,7 @@ var myFullpage = new fullpage('#fullpage', {
 	offsetSections: false,
 	resetSliders: false,
 	fadingEffect: false,
-	scrollOverflow: true,
+	scrollOverflow: false,
 	scrollOverflowReset: false,
 	scrollOverflowOptions: null,
 	touchSensitivity: 15,
@@ -82,15 +82,59 @@ var myFullpage = new fullpage('#fullpage', {
 	onSlideLeave: function (section, origin, destination, direction) {}
 });
 
-new InstagramFeed({
-	'username': 'shareddistance',
-	'container': document.getElementById("instagram-feed"),
-	'display_profile': false,
-	'display_biography': false,
-	'display_gallery': true,
-	'callback': null,
-	'styling': true,
-	'items': 8,
-	'items_per_row': 4,
-	'margin': 0.5
-});
+// new InstagramFeed({
+// 	'username': 'shareddistance',
+// 	'container': document.getElementById("instagram-feed"),
+// 	'display_profile': false,
+// 	'display_biography': false,
+// 	'display_gallery': true,
+// 	'callback': null,
+// 	'styling': true,
+// 	'items': 8,
+// 	'items_per_row': 4,
+// 	'margin': 0.5
+// });
+
+function myFunction(x) {
+	if (x.matches) { // If media query matches
+		new InstagramFeed({
+			'username': 'shareddistance',
+			'container': document.getElementById("instagram-feed"),
+			'display_profile': false,
+			'display_biography': false,
+			'display_gallery': true,
+			'callback': null,
+			'styling': true,
+			'items': 9,
+			'items_per_row': 3,
+			'margin': 0.5
+		});
+	} else {
+		new InstagramFeed({
+			'username': 'shareddistance',
+			'container': document.getElementById("instagram-feed"),
+			'display_profile': false,
+			'display_biography': false,
+			'display_gallery': true,
+			'callback': null,
+			'styling': true,
+			'items': 8,
+			'items_per_row': 4,
+			'margin': 0.5
+		});
+	}
+  }
+  
+  var x = window.matchMedia("(max-width: 700px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+
+// document.addEventListener('DOMContentLoaded', (event) => {
+// 	var instaFeed = document.getElementsByClassName("instagram_gallery")[0];
+// 	var instaPosts = instaFeed.children;
+// 	console.log(instaPosts);
+// 	for (var i=0; i < instaPosts.length; i++) {
+// 		console.log("worked");
+// 	}
+//   })
+
