@@ -79,7 +79,7 @@ var myFullpage = new fullpage('#fullpage', {
 		if (origin.anchor == 'home' || destination.anchor == 'home') {
 			let greenBlobAnimation = anime({
 				targets: '#landing__green-white-blob',
-				delay: 500,
+				delay: 250,
 				translateX: [-500, 0],
 				opacity: ['0%', '100%'],
 				duration: 1000,
@@ -91,7 +91,7 @@ var myFullpage = new fullpage('#fullpage', {
 			let pinkBlobAnimation = anime({
 				targets: '#landing__pink-white-blob',
 				translateX: [500, 0],
-				delay: 500,
+				delay: 250,
 				opacity: ['0%', '100%'],
 				duration: 1000,
 				easing: 'linear',
