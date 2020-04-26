@@ -73,7 +73,7 @@ var myFullpage = new fullpage('#fullpage', {
 
 	//events
 	onLeave: function (origin, destination, direction) {},
-	afterLoad: function(origin, destination, direction){
+	afterLoad: function (origin, destination, direction) {
 		var loadedSection = this;
 
 		if (origin.anchor == 'home' || destination.anchor == 'home') {
@@ -86,7 +86,7 @@ var myFullpage = new fullpage('#fullpage', {
 				easing: 'linear',
 				direction: 'normal',
 				autoplay: true
-			  }); 
+			});
 
 			let pinkBlobAnimation = anime({
 				targets: '#landing__pink-white-blob',
@@ -97,7 +97,7 @@ var myFullpage = new fullpage('#fullpage', {
 				easing: 'linear',
 				direction: 'normal',
 				autoplay: true
-			  });  
+			});
 		}
 
 		// if ((origin == 1 || origin == 3) && destination == 2){
@@ -120,7 +120,7 @@ var myFullpage = new fullpage('#fullpage', {
 	afterResize: function (width, height) {},
 	afterReBuild: function () {},
 	afterResponsive: function (isResponsive) {},
-	afterSlideLoad: function( section, origin, destination, direction){},
+	afterSlideLoad: function (section, origin, destination, direction) {},
 	onSlideLeave: function (section, origin, destination, direction) {}
 });
 
@@ -152,8 +152,8 @@ function myFunction(x) {
 			'margin': 0.5
 		});
 	}
-  }
-  
-  var x = window.matchMedia("(max-width: 700px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes

@@ -64,7 +64,7 @@ body {
   background: #001228;
   padding: 0.75em 2em;
   font-size: 0.8rem;
-  color: white;
+  color: #ffffff;
 }
 
 #landing__learn-more {
@@ -77,51 +77,73 @@ body {
   width: 3%;
 }
 
-#modal {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+.navbar {
+  z-index: 1;
   background-color: #263850;
-  color: white;
-  display: none;
-  z-index: 124;
+  padding: 0;
 }
 
-#modal #modal__yellow-blob {
-  position: fixed;
+.modal {
+  position: fixed !important;
+}
+
+#modal__yellow-blob {
+  position: absolute;
   top: 0;
   right: 0;
+  width: 75%;
 }
 
-#modal #modal__orange-blob {
-  position: fixed;
+#modal__orange-blob {
+  position: absolute;
   bottom: 0;
   left: 0;
-  width: 70%;
+  width: 55%;
 }
 
-#modal #modal__close-btn {
-  font-size: 3rem;
-  float: right;
+#modal__close-btn {
+  font-size: 2.5rem;
+  color: #001228;
 }
 
-#modal h1 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.06em;
-  font-weight: bold;
-  line-height: 2em;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+.modal-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 
-#modal #modal__description {
-  font-size: 0.92rem;
+.modal-title {
+  margin-top: 2.5em;
 }
 
-#modal #modal__resource-19-btn,
-#modal #modal__covid-19-list-btn {
-  font-size: 1rem;
+.modal__title-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.modal-body {
+  height: 100vh;
+}
+
+.modal-content {
+  position: absolute;
+  background-color: #263850;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-header {
+  border: none;
+}
+
+#modal__resource-19-row {
+  height: 60%;
+}
+
+#modal__resource-19-btn,
+#modal__covid-19-list-btn {
+  font-size: .8rem;
   padding: 0.5em 1.5em;
   background-color: #001228;
   border: 3px solid #001228;
@@ -132,7 +154,11 @@ body {
       align-self: center;
 }
 
-#modal #modal__covid-19-title {
+#modal__description {
+  font-size: 0.92rem;
+}
+
+#modal__covid-19-list-col {
   margin-top: 2em;
 }
 
