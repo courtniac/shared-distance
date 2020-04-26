@@ -34,7 +34,7 @@ var myFullpage = new fullpage('#fullpage', {
 	scrollOverflow: false,
 	scrollOverflowReset: false,
 	scrollOverflowOptions: null,
-	touchSensitivity: 15,
+	touchSensitivity: 12,
 	bigSectionsDestination: null,
 
 	//Accessibility
@@ -134,8 +134,8 @@ function myFunction(x) {
 			'display_gallery': true,
 			'callback': null,
 			'styling': true,
-			'items': 9,
-			'items_per_row': 3,
+			'items': 6,
+			'items_per_row': 2,
 			'margin': 0.5
 		});
 	} else {
