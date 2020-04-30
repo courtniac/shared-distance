@@ -141,7 +141,7 @@
             offsetSections: false,
             resetSliders: false,
             fadingEffect: false,
-            normalScrollElements: null,
+            normalScrollElements: '.modal-open .modal',
             scrollOverflow: false,
             scrollOverflowReset: false,
             scrollOverflowHandler: window.fp_scrolloverflow ? window.fp_scrolloverflow.iscrollHandler : null,
