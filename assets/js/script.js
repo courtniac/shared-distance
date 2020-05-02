@@ -23,7 +23,7 @@ var myFullpage = new fullpage('#fullpage', {
 	loopBottom: false,
 	loopTop: false,
 	loopHorizontal: true,
-	continuousVertical: false,
+	continuousVertical: true,
 	continuousHorizontal: false,
 	scrollHorizontally: false,
 	interlockedSlides: false,
@@ -34,7 +34,7 @@ var myFullpage = new fullpage('#fullpage', {
 	scrollOverflow: false,
 	scrollOverflowReset: false,
 	scrollOverflowOptions: null,
-	touchSensitivity: 12,
+	touchSensitivity: 15,
 	bigSectionsDestination: null,
 
 	//Accessibility
@@ -76,29 +76,29 @@ var myFullpage = new fullpage('#fullpage', {
 	afterLoad: function(origin, destination, direction){
 		var loadedSection = this;
 
-		if (origin.anchor == 'home' || destination.anchor == 'home') {
-			let greenBlobAnimation = anime({
-				targets: '#landing__green-white-blob',
-				delay: 250,
-				translateX: [-500, 0],
-				opacity: ['0%', '100%'],
-				duration: 1000,
-				easing: 'linear',
-				direction: 'normal',
-				autoplay: true
-			  }); 
+		// if (origin.anchor == 'home' || destination.anchor == 'home') {
+		// 	let greenBlobAnimation = anime({
+		// 		targets: '#landing__green-white-blob',
+		// 		delay: 250,
+		// 		translateX: [-500, 0],
+		// 		opacity: ['0%', '100%'],
+		// 		duration: 1000,
+		// 		easing: 'linear',
+		// 		direction: 'normal',
+		// 		autoplay: true
+		// 	  }); 
 
-			let pinkBlobAnimation = anime({
-				targets: '#landing__pink-white-blob',
-				translateX: [500, 0],
-				delay: 250,
-				opacity: ['0%', '100%'],
-				duration: 1000,
-				easing: 'linear',
-				direction: 'normal',
-				autoplay: true
-			  });  
-		}
+		// 	let pinkBlobAnimation = anime({
+		// 		targets: '#landing__pink-white-blob',
+		// 		translateX: [500, 0],
+		// 		delay: 250,
+		// 		opacity: ['0%', '100%'],
+		// 		duration: 1000,
+		// 		easing: 'linear',
+		// 		direction: 'normal',
+		// 		autoplay: true
+		// 	  });  
+		// }
 
 		// if ((origin == 1 || origin == 3) && destination == 2){
 		// 	let iconsAnimation = anime({
