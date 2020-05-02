@@ -17,6 +17,8 @@
   <!-- Bootstrap Styling -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Custom Styling -->
   <link rel="stylesheet" href="assets/css/landing.css" type="text/css" />
 </head>
@@ -75,25 +77,25 @@
 
   <div id="fullpage">
     <!-- HOME SECTION -->
-    <div class="section">
+    <div class="section home">
       <div class="container">
         <div class="row">
           <div class="col">
-            <img src="assets/pink-white-blob.svg" class="img-responsive" alt="Landing pink-white-blob"
+            <img src="assets/pink-white-blob.svg" class="img-responsive animated slideInRight slow delay-1s" alt="Landing pink-white-blob"
               aria-label="landing__pink-white-blob" id="landing__pink-white-blob" />
             <div class="col">
-              <img src="assets/green-white-blob.svg" class="img-responsive" alt="Landing green-white-blob"
+              <img src="assets/green-white-blob.svg" class="img-responsive animated slideInLeft slow delay-1s" alt="Landing green-white-blob"
                 aria-label="landing__green-white-blob" id="landing__green-white-blob" />
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col text-center">
-            <img src="assets/img/logo.png" class="img-fluid" alt="Shared Distance Logo" id="landing__logo" />
+            <img src="assets/img/logo.png" class="img-fluid animated slow fadeIn" alt="Shared Distance Logo" id="landing__logo" />
           </div>
         </div>
         <div class="row">
-          <div class="col text-center">
+          <div class="col text-center animated fadeIn delay-1s">
             <p id="landing__bio">
               Connecting the world through individual stories during isolating times.
             </p>
@@ -108,7 +110,7 @@
 
     <!-- ABOUT SECTION -->
     <section class="section about">
-      <div class="container">
+      <div class="container animated fadeIn">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 align-self-center" id="about-text">
             <h1>About Us</h1>
@@ -137,7 +139,7 @@
     <!-- STORIES SECTION -->
     <section class="section stories">
       <!-- <img src="assets/img/stories-bg.svg" id="stories-bg" /> -->
-      <div class="container">
+      <div class="container animated fadeIn">
         <h1><span>Our Stories</span></h1>
         <p>Read our most recent stories, and stay up-to-date by following us on Instagram!</p>
         <div id="instagram-feed" class="instagram_feed"></div>
