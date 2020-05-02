@@ -125,35 +125,34 @@ var myFullpage = new fullpage("#fullpage", {
 });
 
 function myFunction(x) {
-  if (x.matches) {
-    // If media query matches
-    new InstagramFeed({
-      username: "shareddistance",
-      container: document.getElementById("instagram-feed"),
-      display_profile: false,
-      display_biography: false,
-      display_gallery: true,
-      callback: null,
-      styling: true,
-      items: 9,
-      items_per_row: 3,
-      margin: 0.5,
-    });
-  } else {
-    new InstagramFeed({
-      username: "shareddistance",
-      container: document.getElementById("instagram-feed"),
-      display_profile: false,
-      display_biography: false,
-      display_gallery: true,
-      callback: null,
-      styling: true,
-      items: 8,
-      items_per_row: 4,
-      margin: 0.5,
-    });
+	if (x.matches) { // If media query matches
+		new InstagramFeed({
+			'username': 'shareddistance',
+			'container': document.getElementById("instagram-feed"),
+			'display_profile': false,
+			'display_biography': false,
+			'display_gallery': true,
+			'callback': null,
+			'styling': true,
+			'items': 6,
+			'items_per_row': 2,
+			'margin': 0.5
+		});
+	} else {
+		new InstagramFeed({
+			'username': 'shareddistance',
+			'container': document.getElementById("instagram-feed"),
+			'display_profile': false,
+			'display_biography': false,
+			'display_gallery': true,
+			'callback': null,
+			'styling': true,
+			'items': 8,
+			'items_per_row': 4,
+			'margin': 0.5
+		});
+	}
   }
-}
 
 var x = window.matchMedia("(max-width: 700px)");
 myFunction(x); // Call listener function at run time

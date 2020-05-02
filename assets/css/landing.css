@@ -252,7 +252,7 @@ body {
   .modal__title-text {
     font-size: 1.75rem;
   }
-  #modal__description {
+  .your-story-btn {
     font-size: 1.5rem;
   }
   #modal__resource-19-btn,
@@ -284,6 +284,10 @@ body {
   #modal__resource-19-row {
     height: 55%;
   }
+  .your-story-btn {
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+  }
   .modal__title-text {
     font-size: 1.7rem;
   }
@@ -295,12 +299,14 @@ body {
 /* ABOUT STYLING */
 h1 {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 div.fp-tableCell {
@@ -309,11 +315,23 @@ div.fp-tableCell {
 }
 
 #icons {
-  width: 70vw;
+  display: none;
+}
+
+#icons-wide {
+  width: 75vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.container {
+  padding: 2.5em;
+}
+
+.about, .stories {
+  padding-top: 0 !important;
 }
 
 #about-text > p:last-of-type {
@@ -370,6 +388,22 @@ div.fp-tableCell {
 @media (min-width: 768px) {
   #icons {
     width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
+  #icons-wide {
+    display: none;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  .container {
+    padding: 0;
   }
 }
 
