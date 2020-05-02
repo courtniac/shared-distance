@@ -176,6 +176,24 @@ body {
   margin-top: 2em;
 }
 
+// FOOTER
+
+.contact {
+  background-color: $dark-blue;
+  // padding-top: 3em;
+  padding: 0.5em 0;
+}
+
+.social-media-icons {
+  color: $light-white;
+  font-size: 1rem;
+  padding: 0 0.25em;
+}
+
+.social-media-icons:hover {
+  color: $gray;
+}
+
 // MEDIA QUERIES
 
 // Extra small devices
@@ -208,6 +226,7 @@ body {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+
   #landing__green-white-blob,
   #landing__pink-white-blob {
     width: 40%;
@@ -275,6 +294,7 @@ body {
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+
   #landing__green-white-blob,
   #landing__pink-white-blob {
     width: 30%;
@@ -316,6 +336,7 @@ body {
   #landing__green-white-blob {
     width: 25%;
   }
+
   #landing__pink-white-blob {
     width: 22%;
   }
@@ -376,7 +397,7 @@ div.fp-tableCell {
   margin-bottom: 2em;
 }
 
-#about-text > p:last-of-type {
+#about-text>p:last-of-type {
   margin-bottom: 2em;
 }
 
@@ -420,11 +441,11 @@ div.fp-tableCell {
 //   row-gap: 15px;
 // }
 
-.instagram_gallery > a {
+.instagram_gallery>a {
   transition: all 0.25s ease;
 }
 
-.instagram_gallery > a:hover {
+.instagram_gallery>a:hover {
   opacity: 50%;
   transition-timing-function: ease-in;
 }
