@@ -121,27 +121,30 @@ body {
   border: none;
 }
 
+#modal__close-btn {
+  font-size: 3rem;
+  color: $dark-blue;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+.modal-title {
+  margin-top: 1em;
+}
+
 #modal__yellow-blob {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 55%;
 }
 
 #modal__orange-blob {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 52%;
-}
-
-#modal__close-btn {
-  font-size: 2.35rem;
-  color: $dark-blue;
-}
-
-.modal-title {
-  margin-top: 1.5em;
+  width: 50%;
 }
 
 .modal__title-text {
@@ -154,7 +157,7 @@ body {
 }
 
 #modal__resource-19-row {
-  height: 60%;
+  height: 65%;
 }
 
 #modal__description {
@@ -185,7 +188,7 @@ body {
 
 .social-media-icons {
   color: $light-white;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 0 0.30em;
 }
 
@@ -288,6 +291,7 @@ body {
   #modal__covid-19-list-btn {
     font-size: 1.05rem;
   }
+
 }
 
 // Large devices (desktops, 992px and up)
@@ -329,6 +333,10 @@ body {
   #modal__resource-19-btn,
   #modal__covid-19-list-btn {
     font-size: 1.05rem;
+  }
+
+  .social-media-icons {
+    font-size: 1.15em;
   }
 }
 
