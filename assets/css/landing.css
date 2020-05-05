@@ -145,7 +145,7 @@ body {
 }
 
 #modal__description {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 #modal__resource-19-btn,
@@ -156,13 +156,15 @@ body {
   border: 3px solid #001228;
   border-radius: 2em;
   color: white;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
-#modal__covid-19-list-col {
-  margin-top: 2em;
+#modal__resource-19-btn:hover,
+#modal__covid-19-list-btn:hover {
+  text-decoration: none;
+  color: white;
+  background: none;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .contact {
@@ -223,13 +225,14 @@ body {
     font-size: 0.8rem;
   }
   #landing__down-btn {
-    width: 2%;
+    width: 1.5%;
+    margin-top: 0em;
   }
   #modal__yellow-blob {
-    width: 50%;
+    width: 40%;
   }
   #modal__orange-blob {
-    width: 40%;
+    width: 35%;
   }
   #modal__close-btn {
     font-size: 4rem;
@@ -245,10 +248,6 @@ body {
   }
   #modal__resource-19-btn,
   #modal__covid-19-list-btn {
-    font-size: 1.15rem;
-  }
-  #modal__resource-19-btn,
-  #modal__covid-19-list-btn {
     font-size: 1.05rem;
   }
 }
@@ -261,25 +260,20 @@ body {
   #landing__logo {
     width: 85%;
   }
+  .your-story-btn {
+    font-size: 1.5rem;
+  }
   #modal__orange-blob {
     width: 30%;
   }
   #modal__close-btn {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .modal__title-text {
     font-size: 1.75rem;
   }
-  .your-story-btn {
-    font-size: 1.5rem;
-  }
-  #modal__resource-19-btn,
-  #modal__covid-19-list-btn {
-    font-size: 1.5rem;
-  }
-  #modal__resource-19-btn,
-  #modal__covid-19-list-btn {
-    font-size: 1.05rem;
+  #modal__description {
+    font-size: 1.45rem;
   }
   .social-media-icons {
     font-size: 1.15em;
@@ -296,24 +290,12 @@ body {
   #landing__logo {
     width: 70%;
   }
-  #modal__yellow-blob {
-    width: 35%;
-  }
-  #modal__orange-blob {
-    width: 25%;
-  }
-  #modal__resource-19-row {
-    height: 55%;
-  }
   .your-story-btn {
     font-size: 1rem;
     margin-bottom: 1.5em;
   }
-  .modal__title-text {
-    font-size: 1.7rem;
-  }
-  #modal__description {
-    font-size: 1.4rem;
+  #modal__resource-19-row {
+    height: 55%;
   }
 }
 
