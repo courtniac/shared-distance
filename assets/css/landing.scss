@@ -18,11 +18,6 @@ body {
   color: white;
 }
 
-// #fullpage {
-//   height: 100%;
-//   overflow: hidden;
-// }
-
 #landing__green-white-blob {
   position: fixed;
   top: 0;
@@ -121,27 +116,30 @@ body {
   border: none;
 }
 
+#modal__close-btn {
+  font-size: 3rem;
+  color: $dark-blue;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+.modal-title {
+  margin-top: 1em;
+}
+
 #modal__yellow-blob {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 55%;
 }
 
 #modal__orange-blob {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 52%;
-}
-
-#modal__close-btn {
-  font-size: 2.35rem;
-  color: $dark-blue;
-}
-
-.modal-title {
-  margin-top: 1.5em;
+  width: 50%;
 }
 
 .modal__title-text {
@@ -154,11 +152,11 @@ body {
 }
 
 #modal__resource-19-row {
-  height: 60%;
+  height: 65%;
 }
 
 #modal__description {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 #modal__resource-19-btn,
@@ -169,11 +167,32 @@ body {
   border: 3px solid $dark-blue;
   border-radius: 2em;
   color: white;
-  align-self: center;
 }
 
-#modal__covid-19-list-col {
-  margin-top: 2em;
+#modal__resource-19-btn:hover,
+#modal__covid-19-list-btn:hover {
+  text-decoration: none;
+  color: white;
+  background: none;
+  transition: 0.2s ease-in;
+}
+
+
+// FOOTER
+
+.contact {
+  background-color: $dark-blue;
+  padding: 0.5em 0;
+}
+
+.social-media-icons {
+  color: $light-white;
+  font-size: 1rem;
+  padding: 0 0.30em;
+}
+
+.social-media-icons:hover {
+  color: $gray;
 }
 
 // MEDIA QUERIES
@@ -208,6 +227,7 @@ body {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+
   #landing__green-white-blob,
   #landing__pink-white-blob {
     width: 40%;
@@ -234,15 +254,16 @@ body {
   }
 
   #landing__down-btn {
-    width: 2%;
+    width: 1.5%;
+    margin-top: 0em;
   }
 
   #modal__yellow-blob {
-    width: 50%;
+    width: 40%;
   }
 
   #modal__orange-blob {
-    width: 40%;
+    width: 35%;
   }
 
   #modal__close-btn {
@@ -263,18 +284,15 @@ body {
 
   #modal__resource-19-btn,
   #modal__covid-19-list-btn {
-    font-size: 1.15rem;
-  }
-
-  #modal__resource-19-btn,
-  #modal__covid-19-list-btn {
     font-size: 1.05rem;
   }
+
 }
 
 // Large devices (desktops, 992px and up)
 
 @media (min-width: 992px) {
+
   #landing__green-white-blob,
   #landing__pink-white-blob {
     width: 30%;
@@ -284,12 +302,16 @@ body {
     width: 85%;
   }
 
+  .your-story-btn {
+    font-size: 1.5rem;
+  }
+
   #modal__orange-blob {
     width: 30%;
   }
 
   #modal__close-btn {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   .modal__title-text {
@@ -297,21 +319,11 @@ body {
   }
 
   #modal__description {
-    
-  }
-  
-  .your-story-btn {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
 
-  #modal__resource-19-btn,
-  #modal__covid-19-list-btn {
-    font-size: 1.5rem;
-  }
-
-  #modal__resource-19-btn,
-  #modal__covid-19-list-btn {
-    font-size: 1.05rem;
+  .social-media-icons {
+    font-size: 1.15em;
   }
 }
 
@@ -320,6 +332,7 @@ body {
   #landing__green-white-blob {
     width: 25%;
   }
+
   #landing__pink-white-blob {
     width: 22%;
   }
@@ -328,29 +341,13 @@ body {
     width: 70%;
   }
 
-  #modal__yellow-blob {
-    width: 35%;
-  }
-
-  #modal__orange-blob {
-    width: 25%;
-  }
-
-  #modal__resource-19-row {
-    height: 55%;
-  }
-  
   .your-story-btn {
     font-size: 1rem;
     margin-bottom: 1.5em;
   }
 
-  .modal__title-text {
-    font-size: 1.7rem;
-  }
-
-  #modal__description {
-    font-size: 1.4rem;
+  #modal__resource-19-row {
+    height: 55%;
   }
 }
 
@@ -396,11 +393,12 @@ div.fp-tableCell {
   padding: 2.5em;
 }
 
-.about, .stories {
+.about,
+.stories {
   padding-top: 0 !important;
 }
 
-#about-text > p:last-of-type {
+#about-text>p:last-of-type {
   margin-bottom: 2em;
 }
 
@@ -444,11 +442,11 @@ div.fp-tableCell {
 //   row-gap: 15px;
 // }
 
-.instagram_gallery > a {
+.instagram_gallery>a {
   transition: all 0.25s ease;
 }
 
-.instagram_gallery > a:hover {
+.instagram_gallery>a:hover {
   opacity: 50%;
   transition-timing-function: ease-in;
 }
